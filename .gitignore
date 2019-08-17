@@ -1,0 +1,6 @@
+/.idea
+/db/data/*
+/webapps/gokopen/*
+/.settings
+/.classpath
+/.project

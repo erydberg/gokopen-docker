@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+        db:
+          image: mysql:5.6
+          environment:
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_DATABASE: gokopen
+            MYSQL_USER: gokopen
+            MYSQL_PASSWORD: gokopen
+          ports:
+            - 3306:3306
+          volumes:
+           - ./db:/docker-entrypoint-initdb.d
+           - ./db\data:/var/lib/mysql
+
+        web:
+          image: tomcat:8.5.43-jdk8-openjdk
+          ports:
+           - 8080:8080
+          volumes:
+           - ./webapps:/usr/local/tomcat/webapps
+          links:
+            - db
+          depends_on:
+            - db
