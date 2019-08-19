@@ -1,0 +1,1 @@
+Folder for storing mysql-data outside the docker container. Mapped in the docker-compose file.
