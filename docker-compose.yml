@@ -12,12 +12,12 @@ services:
             - 3306:3306
           volumes:
            - ./db:/docker-entrypoint-initdb.d
-           - ./db\data:/var/lib/mysql
+           - ./db/data:/var/lib/mysql
 
         web:
           image: tomcat:8.5.43-jdk8-openjdk
           ports:
-           - 8080:8080
+           - 80:8080
           volumes:
            - ./webapps:/usr/local/tomcat/webapps
           links:
