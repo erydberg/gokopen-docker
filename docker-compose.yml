@@ -9,6 +9,7 @@ services:
             MYSQL_DATABASE: gokopen
             MYSQL_USER: gokopen
             MYSQL_PASSWORD: gokopen
+            TZ: Europe/Stockholm
           ports:
             - 3306:3306
           volumes:
