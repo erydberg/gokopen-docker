@@ -19,6 +19,8 @@ services:
         web:
           restart: always
           image: tomcat:8.5.43-jdk8-openjdk
+          environment:
+            TZ: Europe/Stockholm
           ports:
            - 80:8080
           volumes:
