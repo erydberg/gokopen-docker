@@ -1,7 +1,7 @@
 /.idea
 /db/data/*
 !/db/data/README.md
-/webapps/gokopen/*
+/webapps/app/*
 /.settings
 /.classpath
 /.project
