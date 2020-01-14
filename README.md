@@ -10,7 +10,7 @@ In the docker-compose file the containers are configured to mount folders on the
 The war-file in this project is always generated from the latest build of gokopen.
 
 To run
-If you don't have docker installed and running make the approprate steps
+If you don't have docker and docker-compose installed and running make the approprate steps
 Download the project with git (or some other way) to your host machine
 Navigate to the root folder of the project (where docker-compose.yml is stored)
 Enter: "docker-compose up -d" in the command line
