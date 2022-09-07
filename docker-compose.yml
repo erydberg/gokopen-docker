@@ -12,6 +12,8 @@ services:
             TZ: Europe/Stockholm
           ports:
             - 3306:3306
+          networks:
+            - goknetwork
           volumes:
            - ./db:/docker-entrypoint-initdb.d
            - ./db/data:/var/lib/mysql
@@ -24,10 +26,14 @@ services:
             TZ: Europe/Stockholm
           ports:
            - 80:8080
+          networks:
+           - goknetwork
           volumes:
            - ./webapps:/usr/local/tomcat/webapps
           links:
             - db
           depends_on:
             - db
- 
+networks:
+  goknetwork: {} 
+
