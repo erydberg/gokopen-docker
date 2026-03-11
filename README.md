@@ -1,6 +1,8 @@
 gokopen in docker
 =======
 
+This project is archived. It will no longer be maintained. The combination of gokopen and gokopen-docker is now hosted in project gokapp that uses newer technology, rewritten from the start and also added more features. 
+
 This is a docker package of the application gokopen. It will generate two docker containers based on official tomcat and mysql images on docker hub. Then it will initialize the database for the application and deploy the application on the tomcat application server.
 
 The application name, gokopen.war, can be changed to another name to fit your competition better. It is part of every url if you don't rule them out in a reverse proxy or loadbalancer of some sort. 
